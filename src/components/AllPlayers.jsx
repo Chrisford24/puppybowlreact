@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import fetchDataHandler from '../API/fetchDataHandler'
+import NavBar from './NavBar'
 const BASE_API = " https://fsa-puppy-bowl.herokuapp.com/api/2302-acc-ct-web-pt-b"
 
 
@@ -23,6 +24,7 @@ const AllPlayers = () => {
 
     return (
         <>
+            <NavBar />
             <h1>AllPlayers</h1>
             {players && players.map((player) => {
                 return (
